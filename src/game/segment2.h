@@ -3,6 +3,7 @@
 
 #include <PR/ultratypes.h>
 #include <PR/gbi.h>
+#include "axotext.h"
 
 extern void *puppyprint_font_lut[];
 extern void *puppyprint_kerning_lut[][82];
@@ -77,5 +78,8 @@ extern Gfx dl_billboard_num_D[];
 extern Gfx dl_billboard_num_E[];
 extern Gfx dl_billboard_num_F[];
 #endif
+
+// Axotext
+extern AxotextFont comicsans;
 
 #endif // SEGMENT2_H

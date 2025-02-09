@@ -17,6 +17,7 @@
 #include "engine/math_util.h"
 #include "puppycam2.h"
 #include "puppyprint.h"
+#include "axotext.h"
 
 #include "config.h"
 
@@ -606,6 +607,21 @@ void render_hud(void) {
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_TIMER) {
             render_hud_timer();
+        }
+
+        {
+            AxotextParams params = {
+                &comicsans,
+                16,
+                16,
+                AXOTEXT_ALIGN_CENTER,
+                255,
+                0,
+                0,
+                128
+            };
+            axotext_print(160, 40, &params, -1, "Thanks for trying out axotext\n<3");
+            axotext_render();
         }
 
 #ifdef VANILLA_STYLE_CUSTOM_DEBUG
