@@ -82,4 +82,6 @@ extern Gfx dl_billboard_num_F[];
 // Axotext
 extern AxotextFont comicsans;
 
+extern AxotextFont TimesNewRoman;
+extern AxotextFont Papyrus;
 #endif // SEGMENT2_H

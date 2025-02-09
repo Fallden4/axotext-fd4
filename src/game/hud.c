@@ -610,8 +610,8 @@ void render_hud(void) {
         }
 
         {
-            AxotextParams params = {
-                &comicsans,
+            AxotextParams params1 = {
+                &Papyrus,
                 16,
                 16,
                 AXOTEXT_ALIGN_CENTER,
@@ -620,7 +620,29 @@ void render_hud(void) {
                 0,
                 128
             };
-            axotext_print(160, 40, &params, -1, "Thanks for trying out axotext\n<3");
+            AxotextParams params2 = {
+                &TimesNewRoman,
+                16,
+                16,
+                AXOTEXT_ALIGN_CENTER,
+                255,
+                0,
+                0,
+                128
+            };
+            AxotextParams params3 = {
+                &comicsans,
+                12,
+                12,
+                AXOTEXT_ALIGN_CENTER,
+                255,
+                0,
+                0,
+                128
+            };
+            axotext_print(160, 40, &params1, -1, "Wow!");
+            axotext_print(160, 40, &params2, -1, "\nAxotext...");
+            axotext_print(160, 40, &params3, -1, "\n\nThe quick brown fox jumps over the lazy dog.");
             axotext_render();
         }
 

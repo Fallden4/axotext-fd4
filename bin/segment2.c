@@ -3621,3 +3621,5 @@ const s16 seg2_painting_mesh_neighbor_tris[] = {
 
 // axotext
 #include "axotext/comicsans.inc.c"
+#include "axotext/TimesNewRoman.inc.c"
+#include "axotext/Papyrus.inc.c"
